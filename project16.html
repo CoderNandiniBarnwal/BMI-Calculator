@@ -1,0 +1,61 @@
+<!--
+BMI Calculator
+
+Problem Statement:
+
+A health-focused project to create a user-friendly web application that allows individuals to calculate their Body Mass Index (BMI). This BMI Calculator Web Application, built using HTML, CSS, and JavaScript, aims to provide users with a simple and interactive tool to assess their body weight in relation to their height. Elevate your BMI Calculator Web Application by incorporating age and gender factors to provide users with a more comprehensive health assessment.
+
+Project Features:
+
+Input Fields:
+
+Maintain input fields for height, weight, age, and gender. Include drop-downs or radio buttons for gender selection.
+BMI Calculation:
+
+Implement a BMI calculation formula that accounts for age, gender, height, and weight considering variations in body composition.
+Result Display:
+
+Display the calculated BMI along with a corresponding interpretation, taking into account age and gender differences.
+Visual Feedback:
+
+Provide visual feedback indicating BMI results and their implications. Use different colours or icons to represent varying BMI ranges.
+Unit Options:
+
+User has to input height in centimetres and weight in kilograms.
+Reset Button:
+
+Include a reset button to clear input fields and facilitate multiple calculations without refreshing the page.
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 16</title>
+</head>
+<link rel="stylesheet" href="Project16.css">
+
+<body>
+    <div id="bigbox">
+        <h1>BMI Calculator</h1>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter your name" id="name">
+        <label for="height">Height</label>
+        <input type="number" placeholder="Enter your height" id="height">
+        <label for="weight">Weight</label>
+        <input type="number" placeholder="Enter your weight" id="weight">
+        <label for="age">Age</label>
+        <input type="number" placeholder="Enter your age" id="age">
+        <label for="gender">Gender</label>
+        <select id="gender"></select>
+        <div class="btn">
+            <button onclick="calculateBMI()">Calculate</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="project16.js"></script>
+</body>
+
+</html>
